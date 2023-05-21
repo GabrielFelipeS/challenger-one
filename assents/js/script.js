@@ -11,8 +11,9 @@ function criptografar() {
         textarea.value = "";
 
         let cripto_descripto = document.getElementById("textarea");
-
         cripto_descripto.style.display = "flex";
+        document.getElementById("copiar").style.display = "flex";
+
         var string = '';
         for (var i = 0 ; i < tamanho; i++) {
             console.log(string);
@@ -53,6 +54,8 @@ function descriptografar() {
 
         let descripto = document.getElementById("textarea");
         descripto.style.display = "flex";
+        document.getElementById("copiar").style.display = "flex";
+
         var string = '';
         var codif = 0;
         for(var i = 0; i < tamanho; i++) {
@@ -88,4 +91,11 @@ function descriptografar() {
         console.log(string);
         descripto.value = string;
     }
+}
+
+function copiar() {
+    var content = document.getElementById("textarea");
+    content.select();
+    document.execCommand('copy');
+    content.value = "Texto copiado";
 }
