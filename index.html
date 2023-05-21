@@ -18,8 +18,23 @@
     </section>
     <main>
         <textarea name="criptografado-descriptografado" id="criptografado-descriptografado" placeholder="Digite seu texto" ></textarea>
-
-        <textarea name="" id="result" cols="30" rows="10"></textarea>
+        <div id="content">
+            <div id="hight-quality-products">
+                <img src="./assents/img/High quality products 1 1.svg" alt="">
+            </div>
+    
+            <div id="frame_5">
+                <p class="mensagem-nao-encontrada">Nenhuma mensagem encontrada</p>
+                <p class="descricao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+        <div id="result">
+            <textarea name="" id="textarea" cols="30" rows="10" >
+                
+            </textarea>
+        </div>
+        
+        
     </main>
 
     <section id="Frame_1">
@@ -27,8 +42,8 @@
     </section>
 
     <section class="botoes">   
-            <button id="cripto"><p>Criptografar</p></button>
-            <button id="descripto"><p>Descripitografar</p></button>
+            <button id="cripto" onclick="criptografar()"><p>Criptografar</p></button>
+            <button id="descripto" onclick="descriptografar()"><p>Descripitografar</p></button>
     </section>
     <script src="./assents/js/script.js"></script>
 </body>
