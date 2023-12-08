@@ -4,36 +4,61 @@
 <p align="center" >
      <img width="600" heigth="600" src="https://user-images.githubusercontent.com/91544872/157673876-2c51fc09-5bed-48c0-aad3-97fc7fa64d1d.png">
 </p>
+# README - Criptografia/Descriptografia de Texto
 
-#### Marque esse projeto com uma estrela ⭐
-#### Siga as instruções das aulas e conteúdos 📚
+## Descrição
 
----
+Este conjunto de funções em JavaScript implementa um sistema simples de criptografia e descriptografia de texto. As funções aceitam uma entrada de texto e aplicam transformações específicas para criptografar ou descriptografar o conteúdo.
 
-## Como listar o meu projeto neste Challenge?
----
+<p align="center" >
+     <img style="width: 500px;" src="https://github.com/GabrielFelipeS/challenger-one/assets/108304564/6761d44d-c901-4923-a4fb-04e5caede279"></img>
+</p>
 
-1) Publique o projeto no GitHub
-2) Publica no GitHub Pages: [Como colocar seu projeto no ar com o Github Pages?](https://www.alura.com.br/artigos/como-colocar-projeto-no-ar-com-github-pages) 
-3) Utilize o tópico:
-     - Turma 4: **challengeonedecodificador4**
-     - Turma 5: **challengeonedecodificador5**
+### Criptografar
 
+A função `criptografar` realiza a criptografia do texto inserido. Ela substitui determinadas letras por sequências específicas e exibe o texto criptografado. O código inclui as seguintes substituições:
 
-Vá na aba "Sobre" ou "About" do seu projeto no menu lateral que fica na esquerda dentro do repositório no GitHub
-Adicione a tag "**challengeonedecodificador4**" ou "**challengeonedecodificador5**" dependendo de qual turma você pertence.
+- 'e' é substituído por 'enter'
+- 'i' é substituído por 'imes'
+- 'a' é substituído por 'ai'
+- 'o' é substituído por 'ober'
+- 'u' é substituído por 'ufat'
 
-![gif-vitrine](https://user-images.githubusercontent.com/91544872/153601047-62aee6cb-e3cf-42b3-92c3-7130c996113f.gif)
+### Descriptografar
 
-## Como realizar a entrega final do meu projeto?
----
+A função `descriptografar` realiza a descriptografia do texto inserido. Ela reverte as substituições aplicadas pela função de criptografia, identificando as sequências específicas e restaurando as letras originais. O código considera as seguintes substituições:
 
-4) Preenche o formulário de entrega com o **link do projeto publicado com GitHub Pages**
-🔹 [Link para o formulário](https://lp.alura.com.br/alura-latam-entrega-challenge-one-portugues)
+- 'enter' é substituído por 'e'
+- 'imes' é substituído por 'i'
+- 'ai' é substituído por 'a'
+- 'ober' é substituído por 'o'
+- 'ufat' é substituído por 'u'
 
-![image](https://user-images.githubusercontent.com/92184087/208179699-a9fc5b9e-c9b5-4dab-a711-43ddfbcd00d0.png)
+### Copiar
 
-5) Acesse seu e-mail e terá a sua Badge Exclusiva do Desafio 🏆
-6) Não se esqueça de publicar um link ou vídeo do seu projeto no Linkedin! 🏁
+A função `copiar` copia o texto descriptografado para a área de transferência, permitindo que o usuário o cole em outro lugar.
 
-    <a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>    
+## Uso
+
+1. Incorporar o código JavaScript em uma página HTML.
+   
+    ```html
+    <script>
+        // Coloque as funções aqui
+    </script>
+    ```
+
+2. Use as funções nos elementos HTML correspondentes:
+
+    ```html
+    <textarea id="criptografado-descriptografado" placeholder="Insira o texto"></textarea>
+    <button onclick="criptografar()">Criptografar</button>
+    <button onclick="descriptografar()">Descriptografar</button>
+    <button onclick="copiar()">Copiar</button>
+    <textarea id="textarea" placeholder="Texto criptografado/descriptografado"></textarea>
+    ```
+
+3. Insira texto no campo "Insira o texto" e clique nos botões "Criptografar" ou "Descriptografar" conforme necessário. O texto resultante aparecerá no campo "Texto criptografado/descriptografado".
+
+4. Clique no botão "Copiar" para copiar o texto descriptografado para a área de transferência.
+
