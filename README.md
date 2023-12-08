@@ -1,5 +1,5 @@
 # Challenge ONE | Lógica de Programação | Decodificador de texto
-### Seja bem vindo ao projeto base do Decodificador de texto! Passos fundamentais:
+### Seja bem vindo ao projeto base do Decodificador de texto! 
 
 Link para o github.io: https://gabrielfelipes.github.io/challenger-one/
 
